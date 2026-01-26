@@ -28,7 +28,7 @@ This project focuses on DOM manipulation, game logic, and event handling in Java
 
 - The turn switches to the other player.
 
-- The first player to reach 25 points wins the game.
+- The first player to reach 50 points wins the game.
 
 4. Clicking New Game resets the game to the initial state.
 

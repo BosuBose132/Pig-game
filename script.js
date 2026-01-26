@@ -75,8 +75,8 @@ btnHold.addEventListener('click', function () {
     //scores[1]=scores[1]+currentScore;
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
-    //2. check if the score is >=75
-    if (scores[activePlayer] >= 25) {
+    //2. check if the score is >=50
+    if (scores[activePlayer] >= 50) {
       playing = false;
       diceEl.classList.add('hidden');
       document
