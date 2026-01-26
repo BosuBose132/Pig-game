@@ -12,6 +12,11 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
+const btnOpenModal = document.querySelector('.open-modal');
+const btnCloseModal = document.querySelector('.close-modal');
+const overlay = document.querySelector('.overlay');
+const modal = document.querySelector('.modal');
+
 let scores, currentScore, activePlayer, playing;
 
 const init = function () {
@@ -34,6 +39,7 @@ const init = function () {
   currentScore = 0;
   activePlayer = 0;
   playing = true;
+  ``;
   scores[0] = 0;
   scores[1] = 0;
 };
@@ -86,3 +92,30 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
+console.log(btnOpenModal);
+console.log('open:', btnOpenModal);
+console.log('close:', btnCloseModal);
+console.log('overlay:', overlay);
+console.log('modal:', modal);
+btnOpenModal.addEventListener('click', function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+});
+
+btnCloseModal.addEventListener('click', function () {
+  document.querySelector('.modal').classList.add('hidden');
+  document.querySelector('.overlay').classList.add('hidden');
+});
+overlay.addEventListener('click', function () {
+  document.querySelector('.modal').classList.add('hidden');
+  document.querySelector('.overlay').classList.add('hidden');
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    if (!modal.classList.contains('hidden')) {
+      modal.classList.add('hidden');
+      overlay.classList.add('hidden');
+    }
+  }
+});

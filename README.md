@@ -14,13 +14,13 @@ This project focuses on DOM manipulation, game logic, and event handling in Java
 
 - If the dice shows 1:
 
- - The player loses their current score.
+- The player loses their current score.
 
- - The turn switches to the other player.
+- The turn switches to the other player.
 
 - If the dice shows 2–6:
 
- - The value is added to the player’s current score.
+- The value is added to the player’s current score.
 
 3. Clicking Hold:
 
@@ -38,9 +38,9 @@ This project focuses on DOM manipulation, game logic, and event handling in Java
 
 ### Tech Stack
 
-- HTML5 – Structure of the game UI 
+- HTML5 – Structure of the game UI
 
-- CSS3 – Styling and layout 
+- CSS3 – Styling and layout
 
 - JavaScript (ES6) – Game logic and interactivity
 
@@ -50,7 +50,7 @@ This project focuses on DOM manipulation, game logic, and event handling in Java
   git clone https://github.com/your-username/pig-game.git
 
 - Open index.html in your browser
-      OR
+  OR
   Use VS Code Live Server for a better experience.
 
 ## Features

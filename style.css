@@ -130,13 +130,17 @@ main {
 }
 
 .btn--new {
-  top: 4rem;
+  top: 10rem;
 }
 .btn--roll {
   top: 39.3rem;
 }
 .btn--hold {
   top: 46.1rem;
+}
+
+.btn--instructions {
+  top: 4rem;
 }
 
 .btn:active {
@@ -168,4 +172,129 @@ main {
 
 .hidden {
   display: none;
+}
+
+.show-modal {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.2rem 1.6rem;
+  border-radius: 14px;
+  cursor: pointer;
+
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.show-modal:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.6rem;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+
+  cursor: pointer;
+  font-size: 2.4rem;
+}
+
+.close-modal:hover {
+  border-color: rgba(241, 194, 125, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(650px, 92%);
+  height: min(78vh, 750px);
+  max-height: 92vh;
+  overflow-y: auto;
+
+  padding: 4rem 3rem 3rem 3.6rem;
+  border-radius: var(--radius-xl);
+
+  background: linear-gradient(180deg, var(--bg-soft), var(--bg-soft-2));
+  color: var(--text);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow);
+  z-index: 10001;
+}
+
+.modal h2 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.modal p,
+.modal li {
+  font-size: 1.7rem;
+  line-height: 1.65;
+}
+
+.modal ol {
+  margin: 2.4rem auto;
+  padding: 0;
+  width: 85%;
+  list-style-position: inside;
+}
+
+.modal li {
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.modal li:last-child {
+  margin-bottom: 0;
+}
+
+.modal li {
+  text-align: left;
+}
+
+.modal .rules {
+  width: 70%;
+  margin: 3rem auto 0 auto;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.modal .rules li {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  z-index: 10000;
 }
