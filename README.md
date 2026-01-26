@@ -4,6 +4,10 @@ A simple two-player dice game built using HTML, CSS, and JavaScript, where playe
 
 This project focuses on DOM manipulation, game logic, and event handling in JavaScript.
 
+## 🕹️ Live demo
+
+https://bosubose132.github.io/Pig-game/
+
 ## Game Rules
 
 1. The game has 2 players, playing in turns.
