@@ -231,21 +231,26 @@ main {
   overflow-y: auto;
 
   padding: 4rem 3rem 3rem 3.6rem;
-  border-radius: var(--radius-xl);
+  border-radius: 15px;
 
-  background: linear-gradient(180deg, var(--bg-soft), var(--bg-soft-2));
-  color: var(--text);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  color: #333;
 
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: var(--shadow);
+  border: 2px solid rgba(199, 54, 95, 0.3);
+  box-shadow:
+    0 8rem 10rem rgba(0, 0, 0, 0.3),
+    0 0 60px rgba(199, 54, 95, 0.2);
   z-index: 10001;
 }
 
 .modal h2 {
-  font-size: 2.6rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
   text-align: center;
-  align-items: center;
+  color: #c7365f;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .modal p,
@@ -265,10 +270,16 @@ main {
   margin-bottom: 1.8rem;
   font-size: 1.8rem;
   line-height: 1.7;
+  color: #555;
 }
 
 .modal li:last-child {
   margin-bottom: 0;
+}
+
+.modal li strong {
+  color: #c7365f;
+  font-weight: 600;
 }
 
 .modal li {
@@ -292,9 +303,9 @@ main {
   position: fixed;
   inset: 0;
 
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 
   z-index: 10000;
 }
