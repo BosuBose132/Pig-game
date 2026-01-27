@@ -51,7 +51,7 @@ https://bosubose132.github.io/Pig-game/
 ## How to Run the Project
 
 - Clone the repository:
-  git clone https://github.com/your-username/pig-game.git
+  git clone https://github.com/BosuBose132/pig-game.git
 
 - Open index.html in your browser
   OR
